@@ -11,7 +11,7 @@
     class="flex flex-col w-full gap-6 justify-between items-center lg:items-start max-w-[1280px] lg:flex-row sm:gap-6"
   >
     <div
-      class="flex flex-col gap-[16px] items-center sm:align-self-stretch lg:w-[492px] lg:gap-[60px] lg:items-start lg:flex-shrink-0"
+      class="flex flex-col gap-[16px] items-center sm:align-self-stretch  lg:w-[400px] xl:w-[492px] lg:gap-[60px] lg:items-start lg:flex-shrink-0"
     >
       <GetInTouch
         ButtonData=""

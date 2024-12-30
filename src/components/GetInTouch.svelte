@@ -16,7 +16,7 @@
             {HeadingData}
         </h2>
     </div>
-    <div class="flex flex-col md:w-full lg:w-[492px] md:items-center lg:items-start">
+    <div class="flex flex-col md:w-full lg:w-[400px] xl:w-[492px] md:items-center lg:items-start">
         <p class="text-[#707070] font-inter-tight text-sm sm:text-base lg:text-[18px] text-center lg:text-left leading-[160%] sm:leading-[160%]">
             {ParagraphData}
         </p>

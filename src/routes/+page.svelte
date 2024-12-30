@@ -136,12 +136,27 @@
       videoLink: testimonialVideo1,
     },
   ];
+
 </script>
 
 <svelte:head>
-  <title>INDUS DESIGN STUDIO</title>
-  <meta name="description" content="Svelte demo app" />
+  <!-- Set the title of your website -->
+  <title>Your Website Title</title>
+
+  <!-- Open Graph Meta Tags -->
+  <meta property="og:title" content="Indus Studio" />
+  <meta property="og:image" content="../lib/images/thumbnail.jpg" />
+  <meta property="og:description" content="A brief description of your website" />
+  <!-- <meta property="og:url" content="https://example.com" /> -->
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="627" />
+  <meta property="og:type" content="website" />
+
+  <!-- Optional additional meta tags -->
+  <meta name="description" content="A brief description of your website" />
+  <meta name="author" content="" />
 </svelte:head>
+
 
 <Navbar />
 

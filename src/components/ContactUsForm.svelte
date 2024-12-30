@@ -12,11 +12,12 @@
   import dropDown from "/src/lib/images/drop-down.svg";
 
   function validatePhoneNumber() {
-    if (inputValue.length !== 10) {
-      errorMessage = "Phone number must be exactly 10 digits.";
+    const phoneNumberPattern = /^\d{10}$/; // Regular expression to match exactly 10 digits
+
+    if (!phoneNumberPattern.test(inputValue)) {
+      errorMessage = "Phone number must be exactly 10 digits and contain only numbers.";
     } else {
       errorMessage = "";
-      // Proceed with form submission
       alert("Form submitted successfully!");
     }
   }
