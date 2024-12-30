@@ -137,6 +137,8 @@
     },
   ];
 
+  import Thumbnail from "$lib/images/thumbnail.jpg";
+
 </script>
 
 <svelte:head>
@@ -145,7 +147,7 @@
 
   <!-- Open Graph Meta Tags -->
   <meta property="og:title" content="Indus Studio" />
-  <meta property="og:image" content="../lib/images/thumbnail.jpg" />
+  <meta property="og:image" content="{Thumbnail}" />
   <meta property="og:description" content="A brief description of your website" />
   <!-- <meta property="og:url" content="https://example.com" /> -->
   <meta property="og:image:width" content="1200" />
