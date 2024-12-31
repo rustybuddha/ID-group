@@ -12,19 +12,20 @@
   import dropDown from "/src/lib/images/drop-down.svg";
 
   function validatePhoneNumber() {
-    if (inputValue.length !== 10) {
-      errorMessage = "10 Digits Phone Number required.";
+    const phoneNumberPattern = /^\d{10}$/; // Regular expression to match exactly 10 digits
+
+    if (!phoneNumberPattern.test(inputValue)) {
+      errorMessage = "10 Digits Numeric Value required.";
     } else {
       errorMessage = "";
-      // Proceed with form submission
       alert("Form submitted successfully!");
       closePopup();
     }
   }
 
-  export let imageURL =
-    "https://s3-alpha-sig.figma.com/img/fc80/1341/f5898bff8b3548fbf0656daf279b62f1?Expires=1734912000&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=STnPzsiN6Ja4Jw2Aco7QWOt~vGRcYXWv1LKuIMhNoiwABwmo0JUIo6JdAj82keAetLmAPLUKSMEfVssMbgqmF8NqD6r26sTNyT-Wh2IsVuFPE5tuyB0vhj70Abo~zp028gUgGTSUWiYxjZF25yaqYYMmUbJbvGIXGwyetLeuhVTtscddUXWIWd0fREiYXGxLl4sOJoTJEcsr4NnpszTwppdN7rf~2yF~4bjFbap9NEZ4AXc3b2326ENuUMI~2TOQathJBT6wbcMlJbxPpGJPVNpaShqPPDyqiFuaNAABA78tgGRIVeMaZ4pkJCOVC7PjNQAEyXuT~ifaD6eHbdaEmQ__";
+  import popUpImage from "/src/lib/images/pop_up.png";
 
+  export let imageURL = popUpImage;
   // Controls whether the popup is visible
   let isVisible = false;
 
@@ -185,7 +186,7 @@
           class="flex flex-col items-center gap-5 md:order-4 order-3 w-full px-5 md:px-0"
         >
           <div class="flex flex-col gap-5 md:scale-90 w-full">
-            <FormBlockType1 Label="Name" Value="John Doe" />
+            <FormBlockType1 Label="Name" Value="" />
             <div class="flex flex-col items-start gap-3">
               <div class="flex gap-3 justify-center items-center">
                 <span
